@@ -1,8 +1,8 @@
-addition:main.o add.o
-	g++ -o addition main.o add.o
-main.o:main.cpp
-	g++ -c main.cpp
-add.o:add.cpp
-	g++ -c add.cpp
-clean:
-	rm *.o addition 
+ABC.exe: main.o addInt.o swap.o
+	gcc -o ABC.exe main.o addInt.o swap.o
+main.o: main.c
+	gcc -c main.c
+addInt.o: addInt.c
+	gcc -c addInt.c
+swap.o: swap.c
+	gcc -c swap.c
