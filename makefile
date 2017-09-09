@@ -1,7 +1,4 @@
-ABC.exe: main.o add.o
-	gcc -o ABC.exe main.o add.o
-main.o: main.c
-	gcc -c main.c
-add.o: add.c
-	gcc -c add.c
-
+ABC.exe: palindrome.o main.o
+	gcc -o ABC.exe palindrome.o main.o
+palindrome.o: palindrome.c
+	gcc -c palindrome.c
